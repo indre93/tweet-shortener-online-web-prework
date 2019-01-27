@@ -12,7 +12,7 @@ dictionary = {
    "and" => "&"
  }
 
-def word_substituter(tweet)
+def word_substituter(tweet, dictionary)
   array = tweet.split(" ")
   array.map do |word|
     dictionary.each do |key, value|
