@@ -7,10 +7,7 @@ def word_substituter(tweet, dictionary)
 
   tweet.each do |word|
     puts word
-    dictionary.each do |key, element|
-      if word == key
-
-
+  end
 end
 
 def bulk_tweet_shortener
