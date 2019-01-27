@@ -29,7 +29,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweets)
-  tweets.split(" ").each do |tweet|
+  tweets.split(" ").map do |tweet|
     if tweet.length > 140
       puts bulk_tweet_shortener(tweet)
     else tweet.length <= 140
