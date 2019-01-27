@@ -28,8 +28,12 @@ def bulk_tweet_shortener(tweets)
   end
 end
 
-def selective_tweet_shortener
-
+def selective_tweet_shortener(tweets)
+  if tweets.split(" ").count <= 140
+    puts tweets
+  else
+    bulk_tweet_shortener(tweets)
+  end
 end
 
 def shortened_tweet_truncator
