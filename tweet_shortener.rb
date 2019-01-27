@@ -3,7 +3,13 @@ dictionary = {"hello" => "hi", ["to", "two", "to"] => "2", ["for", "four"] => "4
 
 
 
-def word_substituter(tweet)
+def word_substituter(tweet, dictionary)
+  
+  tweet.each do |word|
+    puts word 
+    dictionary.each do |key, element|
+      if word == key
+        
 
 end
 
